@@ -1,11 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Sidebare from './Sidebare';
+import Trend from './Trend';
 
-function Layout({children}) {
+function Layout() {
     return (
         <>
-            <div className="left-sidebar"/>
-            {children}
-            <div className="right-sidebar" />
+            <Sidebare />
+            <div className='page-main'>
+            <Outlet />
+            </div>
+            <Trend />
         </>
     );
 }

@@ -7,14 +7,14 @@ import iconProfil2 from '../images/TweetProfil2.svg';
 import bannerTwitter from '../images/phototwitter.webp';
 
 
-export const UserProfil = [
+export const UsersProfile = [
   {
     userId: 1,
-    profil: iconTweetProphil,
-    userName: "CNN",
+    profil: '/cnn-avatar.jpg',
+    displayName: "CNN",
     iconCertification: iconOK,
-    banner: bannerCnn,
-    mailProfil: "@CNN",
+    banner: "/cnn-banner.jfif",
+    userName: "cnn",
     description: "Lorum ipsum is the traditional Latin placeholder text, used when a designer needs a chunk of text for dummying up a layout. Journo Ipsum is like that, only using some of the most common catchphrases, buzzwords, and bon mots of the future-of-news crowd. Hit reload for a new batch. For entertainment purposes only. (More here.)",
     points: "...",
     linkWeb: "cnn.com",
@@ -26,11 +26,11 @@ export const UserProfil = [
   },
   {
     userId: 2,
-    profil: iconProfil1,
-    userName: "The New York Times",
+    profil: "/newyorktime.png",
+    displayName: "The New York Times",
     iconCertification: iconOK,
-    banner: bannerNewYorkTime,
-    mailProfil: "@nytimes",
+    banner: "/newyorktime-cover.jfif",
+    userName: "nytimes",
     description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
     points: "...",
     linkWeb: "nytimes.com",
@@ -42,11 +42,11 @@ export const UserProfil = [
   },
   {
     userId: 3,
-    profil: iconProfil2,
-    userName: "Twitter",
+    profil: "/avatar-profile.png",
+    displayName: "Twitter",
     iconCertification: iconOK,
-    banner: bannerTwitter,
-    mailProfil: "@Twitter",
+    banner: "/twitter-cover.jfif",
+    userName: "twitter",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     points: "...",
     linkWeb: "twitter.com",
@@ -55,6 +55,5 @@ export const UserProfil = [
     abonne: 995 + " M",
     suiviPar: "Suivi par Sacre et Sylvin",
     posts: 850.6 + " k"
-  }
   }
 ]
