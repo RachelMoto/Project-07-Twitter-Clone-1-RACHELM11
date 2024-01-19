@@ -16,7 +16,7 @@ function IncrementTweet({ icon, number }) {
   }
 
   return (
-    <div onClick={(event) => handleClick()}>
+    <div onClick={(event) => handleClick()} className='actions-tweets-div'>
       <img src={icon} alt="icon" />
       <span>{count}</span>
 

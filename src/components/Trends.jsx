@@ -16,9 +16,9 @@ function Trends({ props, table }) {
          <div key={index}>
           <div className = "trends-infos">
             <div className = "trends-element">
-              <span>{element.destination} </span>         
-              <span>{element.clé}</span>
-              <span>{element.nombre}</span>
+              <span className="trends-destination">{element.destination} </span>         
+              <span className="trends-clé">{element.clé}</span>
+              <span className="trends-number">{element.nombre}</span>
             </div>
               <img src ={element.icon} alt="" />
            </div>

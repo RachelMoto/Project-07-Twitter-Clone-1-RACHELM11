@@ -431,5 +431,47 @@ ul.sidebar-navbar li a {
     font-size: 15px;
 }
 
+.icon-back svg, .icon-back svg path, .icon g {
+    fill: #fff;
+    color: #fff;
+}
 
+span.trends-destination {
+    opacity: 0.3;
+}
 
+span.trends-clé {
+    font-weight: 800;
+}
+
+span.trends-number {
+    opacity: 0.3;
+}
+
+.actions-tweets-div{
+    display: flex;
+    align-items: center;
+}
+
+.actions-tweets-div:nth-child(1):hover span {
+    color: #1D9BF0;
+}
+.actions-tweets-div:nth-child(1):hover img {
+    background-color: #1D9BF0;
+}
+.actions-tweets-div:nth-child(2):hover span {
+    color: green;
+}
+.actions-tweets-div:nth-child(2):hover img {
+    background-color: green;
+}
+.actions-tweets-div:nth-child(3):hover span {
+    color: red;
+}
+.actions-tweets-div:nth-child(3):hover img {
+    background-color: red;
+}
+
+.spanColor {
+    color: red;
+}

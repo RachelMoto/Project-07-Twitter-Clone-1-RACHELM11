@@ -1,18 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { UsersProfile } from "../components/UserProfil";
-// import ProfileHeader from "../components/profile/profileHeader";
-// import ProfileInfos from "../components/profile/profileInfos";
-// import UsersServices from "../models/usersServices";
-// import ProfileContent from "../components/profile/profileContent";
-// import Profile404 from "../components/profile/profile404";
+import BackIcon from "../images/backIcon";
+
 
 function Profile() {
   const { userName } = useParams("userName");
 
   const users = UsersProfile;
   
-  const user = users.find((user) => user.userName == userName);
+  const user = users.find((user) => user.displayName == userName);
   console.log(user);
 
 //   console.log(user);
@@ -22,7 +19,7 @@ function Profile() {
       <div className="profile-content-top">
         <div className="pc-header">
           <div className="icon-back">
-            <span>=</span>
+            <span><BackIcon /></span>
           </div>
           <div className="pc-header-text">
             <h5>{user.displayName}</h5>

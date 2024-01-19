@@ -12,10 +12,13 @@ import iconTweetButon from '../images/Tweet-Buton.svg';
 import iconPhoto from '../images/profile-photo.png';
 import iconPrivate from '../images/Private.svg';
 import iconMore2 from '../images/More-2.svg';
+import { Link } from 'react-router-dom';
+import { UsersProfile } from './UserProfil';
 
 
 
 function Sidebare({props}) {
+  const oneUser = UsersProfile.find((user) => user.isLogin === true)
   return (
 <div className='sidebar'>
   <ul className='sidebar-navbar'>
@@ -25,10 +28,10 @@ function Sidebare({props}) {
       </a>
     </li> 
     <li>
-      <a href="#">
+      <Link to={"/"}>
         <img src={iconHome} alt="icon" />
         <span>Home</span>
-      </a>
+        </Link>
     </li> 
     <li>
       <a href="#">
@@ -61,10 +64,10 @@ function Sidebare({props}) {
       </a>
     </li> 
     <li>
-      <a href="#">
+    <Link to={`/${oneUser.displayName}`}>
         <img src={iconProfile} alt="icon" />
         <span>Profile</span>
-      </a>
+      </Link>
     </li> 
     <li>
       <a href="#">
@@ -77,11 +80,15 @@ function Sidebare({props}) {
          <img src={iconTweetButon} alt="icon" />
       </a>
   <div>
+  <Link to={`/${oneUser.displayName}`}>
     <img src={iconPhoto} alt="icon" />
     <span>Bradley Ortiz</span>
+    </Link>
     <img src={iconPrivate} alt="icon" />
     <img src={iconMore2} alt="icon" />
+    <Link to={`/${oneUser.displayName}`}>
     <p>@bradley_</p>
+    </Link>
   </div>  
    
 </div>

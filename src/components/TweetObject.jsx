@@ -13,12 +13,12 @@ import iconProfil2 from '../images/TweetProfil2.svg';
 export const TweetTable = [
   {
     photo: iconTweetProphil,
-    compte: [{
+    compte: {
       name: "CNN",
       icon: iconOK,
       mail: "@CNN .",
       time: "7m"
-    }],
+    },
     description: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
     photoTweet: null,
 
@@ -38,12 +38,12 @@ export const TweetTable = [
 
   {
     photo: iconProfil1,
-    compte: [{
+    compte: {
       name: "The New York Times",
       icon: iconOK,
       mail: "@nytimes .",
       time: "2h"
-    }],
+    },
     description: "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
     photoTweet: iconImageTweet,
 
@@ -62,12 +62,12 @@ export const TweetTable = [
 
   {
     photo: iconProfil2,
-    compte: [{
+    compte: {
       name: "Twitter",
       icon: iconOK,
       mail: "@Twitter .",
       time: "Oct 29 "
-    }],
+    },
     description: "BIG NEWS lol jk still Twitter",
     photoTweet: null,
 
@@ -85,12 +85,12 @@ export const TweetTable = [
 
   {
     photo: iconProfil2,
-    compte: [{
+    compte: {
       name: "Twitter",
       icon: iconOK,
       mail: "@Twitter .",
       time: "Oct 4 "
-    }],
+    },
     description: "hello literally everyone",
     photoTweet: null,
 
