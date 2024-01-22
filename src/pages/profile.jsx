@@ -45,7 +45,7 @@ function Profile() {
         </div>
         <div className="pc-infos-section">
         <p className="profile-description">{user.description}</p>
-            <div className="texts-actions">Array</div>
+            <div className="texts-actions"></div>
         </div>
       </div>
       <div className="profile-content-bottom"></div>
