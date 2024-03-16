@@ -2,17 +2,18 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { UsersProfile } from "../components/UserProfil";
 import BackIcon from "../images/backIcon";
+import { useTweetContext } from "../models/TweetContext";
 
 
 function Profile() {
   const { userName } = useParams("userName");
 
-  const users = UsersProfile;
+  const {users} = useTweetContext()
   
   const user = users.find((user) => user.displayName == userName);
-  console.log(user);
 
-//   console.log(user);
+
+
 
   return (
     <>

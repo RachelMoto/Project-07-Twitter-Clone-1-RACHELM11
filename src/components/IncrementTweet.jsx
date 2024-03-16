@@ -18,8 +18,8 @@ function IncrementTweet({ icon, number }) {
   };
 
   return (
-    <div onClick={(event) => handleClick(event)} className="actions-tweets-div">
-      <img src={icon} alt="icon" />
+    <div onClick={(event) => handleClick(event)} className="flex items-center opacity-50">
+      <img src={icon} className="w-8" alt="icon" />
       <span>{count}</span>
     </div>
   );

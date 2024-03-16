@@ -9,7 +9,7 @@ import bannerTwitter from '../images/phototwitter.webp';
 
 export const UsersProfile = [
    {
-    user:1,
+    userId:1,
     profil: '/profile-photo.png',
     displayName: "Bradley Ortiz",
     iconCertification: null,
